@@ -51,6 +51,13 @@ body{
     flex: 2;
 }
 
+.profile-picture{
+    width: 34px;
+    height: 34px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
 .sidebar{
     width: 50px;
     height: 100%; 
