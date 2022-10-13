@@ -15,21 +15,40 @@ body{
 .navbar-container{
     display: flex;
     align-items: center;
-    background-color: bisque;
     padding: 0 50px;
     height: 100%;
+    color: white;
+    font-family: Source Sans Pro;
 }
 
 .logo-container{
     flex: 1;
 }
 
+.logo{
+    font-size: 30px;
+    color: blueviolet;
+}
+
 .menu-container{
-    flex: 1;
+    flex: 6;
+}
+
+.menu-list{
+    display: flex;
+    list-style: none;
+}
+
+.menu-list-items{
+    margin: 30px;
+}
+
+.menu-list-items.active{
+    font-weight: bold;
 }
 
 .profile-container{
-    flex: 1;
+    flex: 2;
 }
 
 .sidebar{
