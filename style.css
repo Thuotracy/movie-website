@@ -49,6 +49,9 @@ body{
 
 .profile-container{
     flex: 2;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
 }
 
 .profile-picture{
@@ -56,6 +59,17 @@ body{
     height: 34px;
     border-radius: 50%;
     object-fit: cover;
+}
+
+.toggle{
+    width: 40px;
+    height: 20px;
+    background-color: white;
+    border-radius: 30px;
+}
+
+.profile-text-container{
+    margin: 0 20px;
 }
 
 .sidebar{
