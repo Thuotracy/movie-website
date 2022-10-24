@@ -92,6 +92,7 @@ body{
     right: 1px;
     border-radius: 50%;
     cursor: pointer;
+    transition: 1s ease all;
 }
 
 .sidebar{
@@ -112,6 +113,10 @@ body{
     margin-bottom: 45px;
 }
 
+h1{
+    color: white;
+}
+
 .container{
     background-color: #151515;
     min-height: calc(100vh - 50px);
@@ -130,6 +135,7 @@ body{
     width: 500px;
     color: white;
     margin: 120px 0px;
+    margin-top: -5px;
 }
 
 .featured-button{
@@ -149,12 +155,15 @@ body{
 
 .movie-list-wrapper{
     position: relative;
+    overflow: hidden;
 }
 
 .movie-list{
     display: flex;
     align-items: center;
     height: 300px;
+    transform: translateX(0);
+    transition: all 1s ease-in-out;
 }
 
 .movie-list-item{
@@ -177,8 +186,9 @@ body{
 .movie-list-item-img{
     transition: all 1s ease-in-out;
     width: 270px;
-    height: 180px;
+    height: 200px;
     object-fit: cover;
+    border-radius: 20px;
 }
 
 .movie-list-item-title{
@@ -231,5 +241,40 @@ body{
     cursor: pointer;
 }
 
+.container.active{
+    background-color: white;
+}
+
+.movie-list-title.active{
+    color: black;
+}
+
+.navbar-container.active{
+    background-color: white;
+    color: black;
+}
+
+.sidebar.active{
+    background-color: white;
+}
+
+.left-menu-icon.active{
+    color: black;
+}
+
+.toggle.active{
+    background-color: black;
+}
+
+.toggle-ball.active{
+    background-color: white;
+    transform: translateX(-20px);
+}
+
+@media only screen and (max-width: 940px){
+    .menu-container{
+        display: none;
+    }
+}
 
 
